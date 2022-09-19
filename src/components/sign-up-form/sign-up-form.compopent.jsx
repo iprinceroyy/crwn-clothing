@@ -27,7 +27,6 @@ const SignUpForm = () => {
 	const handleSubmit = async event => {
 		event.preventDefault();
 
-		console.log(password);
 		if (password !== confirmPassword) {
 			alert('passwords do not match');
 			return;
@@ -35,10 +34,7 @@ const SignUpForm = () => {
 
 		try {
 			console.log(email, password);
-			const { user } = await createAuthUserWithEmailAndPassword(
-				email,
-				password
-			);
+			const { user } = await createAuthUserWithEmailAndPassword(email, password);
 
 			await createUserDocumentFromAuth(user, { displayName });
 			resetFormFields();
@@ -56,7 +52,7 @@ const SignUpForm = () => {
 
 	return (
 		<div className='sign-up-container'>
-			<h1>Dont' have an account</h1>
+			<h1>Don't have an account</h1>
 			<span>Sign up with your email and password</span>
 			<form onSubmit={handleSubmit}>
 				<FormInput

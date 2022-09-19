@@ -10,9 +10,7 @@ import './authentication.styles.scss';
 const Authentication = () => {
 	return (
 		<div className='authentication-container'>
-			{/* <h1>Sign In Page</h1> */}
 			<SignInForm />
-			{/* <button onClick={logGoogleUser}>Sign in with Google Popup</button> */}
 			<SignUpForm />
 		</div>
 	);
