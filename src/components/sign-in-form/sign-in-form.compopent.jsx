@@ -1,8 +1,9 @@
 import { useState } from 'react';
 
 import FormInput from '../form-input/form-input.component';
+import Button, { BUTTON_TYPE_CLASSES } from '../button/button.component';
+
 import './sign-in-form.styles.scss';
-import Button from '../button/button.component';
 
 import {
 	createUserDocumentFromAuth,
@@ -82,7 +83,7 @@ const SignInForm = () => {
 						type='button'
 						children='Google sign In'
 						onClick={signInWithGoogle}
-						buttonType='google'
+						buttonType={BUTTON_TYPE_CLASSES.google}
 					/>
 				</div>
 			</form>
