@@ -6,7 +6,7 @@ import { UserContext } from '../../contexts/user.context';
 import { CartContext } from '../../contexts/cart.context';
 
 import CartIcon from '../../components/cart-icon/cart-icon.component';
-import CartDropdown from '../../components/card-dropdown/card-dropdown.component';
+import CartDropdown from '../../components/card-dropdown/cart-dropdown.component';
 
 import { NavigationContainer, NavLinks, NavLink, LogoContainer } from './navigation.styles.jsx';
 
