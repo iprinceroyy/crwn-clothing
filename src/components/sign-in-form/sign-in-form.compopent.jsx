@@ -6,7 +6,6 @@ import Button, { BUTTON_TYPE_CLASSES } from '../button/button.component';
 
 import './sign-in-form.styles.scss';
 
-import { signInAuthUserWithEmailAndPassword } from '../../utils/firebase/firebase.utils';
 import { emailSignInStart, googleSignInStart } from '../../store/user/user.action';
 
 const defaultFormFields = {
