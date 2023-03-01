@@ -22,7 +22,7 @@ const PaymentForm = () => {
 
 		if (!stripe || !elements) return;
 
-		setIsProcessingPayment(!isProcessingPayment);
+		setIsProcessingPayment(true);
 
 		const response = await fetch('/.netlify/functions/create-payment-intent', {
 			method: 'post',
@@ -45,7 +45,7 @@ const PaymentForm = () => {
 			},
 		});
 
-		setIsProcessingPayment(!isProcessingPayment);
+		setIsProcessingPayment(false);
 
 		if (paymentResult.error) alert(paymentResult.error.message);
 		else {
