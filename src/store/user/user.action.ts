@@ -72,8 +72,8 @@ export const signUpStart = withMatcher(
 );
 
 export const signUpSuccess = withMatcher(
-	(user: UserData, additionalDetails: AdditionalInformation): SignInSuccess =>
-		createAction(USER_ACTION_TYPES.SIGN_IN_SUCCESS, { user, additionalDetails })
+	(user: UserData, additionalDetails: AdditionalInformation): SignUpSuccess =>
+		createAction(USER_ACTION_TYPES.SIGN_UP_SUCCESS, { user, additionalDetails })
 );
 
 export const signUpFailed = withMatcher(

@@ -8,6 +8,7 @@ import {
 	signInSuccess,
 } from './user.action';
 import { AnyAction } from 'redux';
+import { UserData } from '../../utils/firebase/firebase.utils';
 
 export type UserState = {
 	readonly currentUser: UserData | null;

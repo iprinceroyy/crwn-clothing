@@ -7,7 +7,7 @@ import {
 	withMatcher,
 } from '../../utils/reducer/reducer.utils';
 
-const addCartItem = (cartItems: CartItem[], productToAdd: CategoryItem): CartItems[] => {
+const addCartItem = (cartItems: CartItem[], productToAdd: CategoryItem): CartItem[] => {
 	const existingCartItem = cartItems.find(cartItem => cartItem.id === productToAdd.id);
 
 	if (existingCartItem) {
