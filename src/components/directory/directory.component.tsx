@@ -1,6 +1,6 @@
 import DirectoryItem from '../directory-item/directory-item.component';
 
-import './directory.styles.tsx';
+import { DirectoryContainer } from './directory.styles';
 
 const categories = [
 	{
@@ -35,14 +35,12 @@ const categories = [
 	},
 ];
 
-const Directory = () => {
-	return (
-		<div className='directory-container'>
-			{categories.map(category => (
-				<DirectoryItem key={category.id} category={category} />
-			))}
-		</div>
-	);
-};
+const Directory = () => (
+	<DirectoryContainer>
+		{categories.map(category => (
+			<DirectoryItem key={category.id} category={category} />
+		))}
+	</DirectoryContainer>
+);
 
 export default Directory;
