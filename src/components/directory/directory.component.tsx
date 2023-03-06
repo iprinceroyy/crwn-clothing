@@ -1,6 +1,6 @@
 import DirectoryItem from '../directory-item/directory-item.component';
 
-import './directory.styles.scss';
+import './directory.styles.tsx';
 
 const categories = [
 	{
@@ -44,4 +44,5 @@ const Directory = () => {
 		</div>
 	);
 };
+
 export default Directory;
