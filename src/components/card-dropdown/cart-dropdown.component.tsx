@@ -5,9 +5,10 @@ import { useSelector, useDispatch } from 'react-redux';
 import Button from '../button/button.component';
 import CartItem from '../cart-item/cart-item.component';
 
-import { CartDropdownContainer, EmptyMessage, CartItems } from './cart-dropdown.styles.jsx';
 import { selectCartItems, selectIsCartOpen } from '../../store/cart/cart.selector';
 import { setIsCartOpen } from '../../store/cart/cart.action';
+
+import { CartDropdownContainer, EmptyMessage, CartItems } from './cart-dropdown.styles';
 
 const CartDropdown = () => {
 	const cartItems = useSelector(selectCartItems);
