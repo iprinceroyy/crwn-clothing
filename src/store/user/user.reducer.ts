@@ -25,7 +25,7 @@ const INITIAL_STATE: UserState = {
 export const userReducer = (state = INITIAL_STATE, action: AnyAction) => {
 	if (signInSuccess.match(action)) return { ...state, currentUser: action.payload };
 
-	if (signInSuccess.match(action)) return { ...state, currentUser: null };
+	if (signOutSuccess.match(action)) return { ...state, currentUser: null };
 
 	if (signInFailed.match(action) || signUpFailed.match(action) || signOutFailed.match(action))
 		return { ...state, error: action.payload };
