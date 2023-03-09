@@ -1,15 +1,8 @@
 import styled from 'styled-components';
 
 export const AuthenticationContainer = styled.div`
-	padding: 0 2rem;
+	width: 900px;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
-	gap: 2rem;
-
-	@media (min-width: 45rem) {
-		flex-direction: row;
-		align-items: flex-start;
-	}
+	justify-content: space-between;
+	margin: 30px auto;
 `;
